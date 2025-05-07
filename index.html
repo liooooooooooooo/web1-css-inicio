@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendiendo_css</title>
+</head>
+
+<body>
+    <h1>APRENDIENDO CSS</h1>
+
+    <h2>¿Qué significa CSS?</h2>
+
+    <p>Las hojas de estilo en cascada (CSS, cascading style sheets) permiten crear páginas web atractivas.</p>
+
+    <h2>¿Para qué sirve el CSS? ¿Qué programa se utiliza para interpretar el CSS?</h2>
+
+    <p> el CSS es un lenguaje informático que especifica cómo se presentan los documentos a los usuarios: cómo se
+        diseñan, compaginan, etc.
+        Un documento suele ser un archivo de texto estructurado con un lenguaje de marcado: HTML es el más común, pero
+        también existen otros como SVG o XML.</p>
+
+    <h2>¿A qué se llama regla de CSS?</h2>
+
+    <p>El CSS es un lenguaje basado en reglas: cada usuario define las reglas que especifican los grupos de estilos que
+        van a aplicarse a elementos particulares o grupos de elementos de la página web.
+        Por ejemplo: «Quiero que el encabezado principal de mi página se muestre en letras grandes de color rojo».</p>
+
+    <h2>¿Cuál es la anatomía de la regla de CSS? Agregar imagen explicativa y utilizando una lista descriptiva explicar
+        sus elementos.</h2>
+
+    <p>Luego tenemos un conjunto de llaves { }. Entre estas habrá una o más declaraciones, que tomarán la forma de pares
+        de propiedad y valor. </p>
+
+    <p> tenemos la propiedad color, que puede tomar varios valores de color.</p>
+
+    <p>tenemos la propiedad de font-size, que puede tomar varias unidades de tamaño como valor.</p>
+    <p>ejemplo en esta imagen</p>
+
+    <img src="./img/css aprendiendo.png" alt="css" width="300">
+
+    <h2>¿Qué es un selector en CSS?</h2>
+
+    <p>Selector: selecciona el elemento a dar estilo (en este caso, los elementos p ). Para dar estilo a un elemento
+        diferente, solo cambia el selector.</p>
+
+    <h2>Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.</h2>
+
+    <p>SELECTOR DE ID</p>
+
+    <p>Este tipo de selector es igual al de clase, aunque lo aplicaremos a un único elemento HTML de nuestra página.
+        Esto se debe a que el atributo ID de HTML identifica a un elemento HTML por medio de un nombre.</p>
+
+    <p>SELECTOR DE CLASES</p>
+
+    <p>Los selectores de clases comienzan siempre por un . (punto). Los clientes web (navegadores) identifican este
+        punto y lo distinguen del resto de los selectores.</p>
+
+    <p>SELECTOR universal</p>
+
+    <p>Nos permite aplicar estilos a todos los elementos HTML de un documento y se indica mediante el *.</p>
+
+    <p>SELECTOR POR ETIQUETAS</p>
+
+    <P>Aplicamos propiedades CSS a una etiqueta. La misma se identifica sin utilizar <>.</P>
+
+    <P>SELECTOR DESCENTE</P>
+
+    <P>Con este selector seleccionamos un elemento que está dentro de otro del mismo tipo. Estos seectores siempre están
+        formados por dos o más selectores separados entre si. El último selector será el elemento HTML al que se le
+        aplicará las propiedades de CSS.</P>
+
+    <h2>Explicar brevemente utilizando una lista ordenada: ¿cómo funciona el CSS? </h2>
+
+    <ol>
+        <li>El navegador carga el HTML (por ejemplo, lo recibe de la red).</li>
+        <li>Convierte el HTML en un DOM (Modelo de objetos del documento). El DOM representa el documento en la memoria
+            del ordenador. Lo explicaremos más detalladamente en la sección siguiente.</li>
+        <li>Entonces, el navegador va a buscar la mayor parte de los recursos vinculados al documento HTML, como las
+            imágenes y los videos incrustados.</li>
+        <li>El navegador analiza el CSS y ordena en diferentes «cubos» las diferentes reglas según el tipo de selector.
+            Por ejemplo, elemento, clase, ID, y así sucesivamente.</li>
+        <li>El árbol de renderización presenta la estructura en que los nodos deben aparecer después de aplicarle las
+            reglas</li>
+        <li>En la pantalla se muestra el aspecto visual de la página (esta etapa se llama pintura).</li>
+    </ol>
+
+    <h2>¿Cuáles son las tres formas para vincular CSS con HTML?</h2>
+
+    <p>FORMA NUM 1:css en linea </p>
+
+    <p>Se escribe directamente dentro del atributo style de una etiqueta HTML.p style="color: red;">Este texto es rojo
+    </p>
+
+    <P>FORMA NUM 2:CSS INTERNO</P>
+
+    <p>Se coloca dentro de una etiqueta style en el head del HTML.</p>
+
+    <p>FORMA NUM 2: CSS EXTERNO</p>
+
+    <P>Se escribe en un archivo .css separado y se vincula con link en el head del HTML.</P>
+
+    <h2> Ingrese al sitio CSS Zen Garden http://www.csszengarden.com y analicemos el código HTML siguiendo los
+        siguientes pasos:</h2>
+
+    <ul>
+        <li>https://www.csszengarden.com/219/ <br> https://www.csszengarden.com/204/ <br> Son iguales, uno es el 219 y
+            otro el 204, lo que contribuye al cambio de diseño son las librerias de CSS unidas con <code><link>.</code>
+        </li>
+        <li>No, los diseños no son los mismos ya que el diseño CSS con el cual se hicieron fue diferente.</li>
+        <li>Si, pueden tener diferentes diseños, lo que importa no es el html, sino que el CSS es el que define el
+            "estilo"</li>
+    </ul>
+
+    <h2>Utilizaremos las siguientes propiedades de CSS. Completar la columna de valores posibles para cada propiedad.
+    </h2>
+    <table>
+        <tr>
+            <th colspan="3">PRACTICA INICIAL DE CSS</th>
+        </tr>
+        <tr>
+            <td>PROPIEDAD</td>
+            <td>DESCRIPCION</td>
+            <td>VALORES POSIBLES</td>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>Define el color del texto/</td>
+            <td>color: rgb(34, 12, 64, 0.6);/color: hsl(30, 100%, 50%, 0.6);/color: #090;</td>
+        </tr>
+        <tr>
+            <td>background-color</td>
+            <td>Define el color de fondo de un elemento</td>
+            <td>background-color: teal;/background-color: rgb(153, 102, 153);/background-color: #777799;</td>
+        </tr>
+        <tr>
+            <td>font-size</td>
+            <td>Define el tamaño de la fuente del texto</td>
+            <td>font-size: xx-large/ font-size: 250%/ font-size: 16px;</td>
+        </tr>
+        <tr>
+            <td>font-weight</td>
+            <td>Define el grosor de la fuente del texto </td>
+            <td>font-weight: lighter;/font-weight: inherit;/font-weight: normal;</td>
+        </tr>
+        <tr>
+            <td>font-style</td>
+            <td>Define el estilo de la fuente del texto</td>
+            <td>font-style: normal;/font-style: oblique;/font-style: inherit;</td>
+        </tr>
+        <tr>
+            <td>font-family</td>
+            <td>Define el tipo de letra a utilizar para el texto</td>
+            <td>font-family: "Gill Sans Extrabold"/font-family: Courier, "Lucida Console", monospace</td>
+        </tr>
+        <tr>
+            <td>text-align</td>
+            <td>Define la alineación horizontal del texto</td>
+            <td>text-align: start;/text-align: -moz-center;/text-align: inherit;</td>
+        </tr>
+        <tr>
+            <td>text-decoration</td>
+            <td>Define la decoración del texto</td>
+            <td>text-decoration: none;/text-decoration: inherit;</td>
+        </tr>
+        <tr>
+            <td>text-transform</td>
+            <td>Define la transformación del texto </td>
+            <td>text-transform: capitalize;/text-transform: inherit;</td>
+        </tr>
+        <tr>
+            <td>letter-spacing</td>
+            <td>Define el espacio entre letras</td>
+            <td>letter-spacing:normal/ letter-spacing:0,3em/letter-spacing:inerhit</td>
+        </tr>
+        <tr>
+            <td>line-height</td>
+            <td>Define la altura de línea del texto</td>
+            <td>line-height: normal;/line-height: 3em;/line-height: inherit;</td>
+        </tr>
+    </table>
+</body>
+
+</html>
